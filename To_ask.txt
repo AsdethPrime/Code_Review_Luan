@@ -1,0 +1,19 @@
+For 1B
+1) Attributes within part variable:
+    Do the attribute need to be private?
+    In the code snipped first the variables are declared as private (__)
+    Later in the method they are called as if they are not private
+
+2) The current addAssembledPart method merely creates and adds a new assembled part
+    It does NOT currently update the quantity on hand for either of the orginal part 
+    Is this required?
+===========================================
+
+For the funky 1B version 
+1) Dataclass decorate is being used so constructor is being written behind the scene by python itself
+2) Type checking included so editor will warn if you input incorrect value, even before you run it
+3) Two classes, DataValidator and DataFormatter are created which
+    Does not allow empty id, name to be entered 
+    If empty value are provided, custom error is printed in the console and program exits
+    If correct value but incorrect type is provided (for example a price of "20.20"), its automatically casted to correct value(20.20)
+
